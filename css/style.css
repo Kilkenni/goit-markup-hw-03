@@ -1,0 +1,376 @@
+:root {
+  /* Palette */
+  --text-color-primary: #757575;
+  --text-color-secondary: #212121;
+  --text-color-other: #000000;
+  --text-color-other-inv: #ffffff;
+  --text-color-misc: rgba(255, 255, 255, 0.6);
+
+  --bkg-color-primary: #ffffff;
+  --bkg-color-secondary: #2f303a;
+
+  --accent-color: #2196f3;
+  --accent-hover: #188ce8;
+  --accent-inactive: #f5f4fa;
+}
+
+body {
+  background-color: var(--bkg-color-primary);
+  color: var(--text-color-primary);
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+/* HEADER */
+
+.header {
+  height: 80px;
+  padding-top: 25px;
+  padding-bottom: auto;
+  padding-left: 215px;
+}
+
+.header-logo,
+.header-nav,
+.header-nav-panel,
+.header-contacts {
+  display: inline;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
+
+.header-logo {
+  /* margin-top: 25px; */
+  margin-right: 95px;
+  /* margin-left: 215px; */
+  /* margin-top: 30px;
+  margin-bottom: auto; */
+}
+
+.logo-left {
+  color: var(--accent-color);
+}
+
+.logo-right {
+  color: var(--text-color-other);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header-nav-panel .link,
+.header-contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.header-nav-panel,
+.header-contacts {
+  list-style-type: none;
+  /* margin: 0px; */
+  /* padding: 0px; */
+}
+
+.header-nav-panel {
+  margin-right: 330px;
+}
+
+.header-nav-panel-item,
+.header-contacts-item {
+  display: inline;
+}
+
+.header-nav-panel-item:not(:last-child),
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-nav-panel-item > .link {
+  color: var(--text-color-secondary);
+}
+
+.header-nav-panel-item > .active-link {
+  color: var(--accent-color);
+}
+
+.header-contacts-item > .link {
+  color: var(--text-color-primary);
+}
+
+/* .header-nav-panel-item > .link:hover,
+.header-nav-panel-item > .link:focus,
+.header-contacts-item > .link:hover,
+.header-contacts-item > .link:focus {
+  color: var(--accent-color);
+} */
+
+/* section HERO */
+
+.section-hero {
+  background-color: var(--bkg-color-secondary);
+  padding: 200px 450px;
+}
+
+.section-hero-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  color: var(--text-color-other-inv);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--text-color-other-inv);
+
+  cursor: pointer;
+}
+
+.section-hero-btn {
+  align-items: center;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-hover);
+  /* color: var(--text-color-secondary); */
+}
+
+/* section GENERIC */
+
+.section {
+  margin-bottom: 95px;
+}
+
+.section-header {
+  /* font-weight: bold; */
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  margin: 0 auto 50px auto;
+  text-align: center;
+
+  color: var(--text-color-secondary);
+}
+
+.list-item-inline {
+  display: inline-block;
+}
+
+/* section TRAITS */
+
+.display-hide {
+  display: none;
+}
+
+.section-traits-list {
+  list-style-type: none;
+  margin: auto;
+}
+
+.section-traits-list-item {
+  width: 270px;
+  height: 100px;
+}
+
+.section-traits-list-item-header {
+  /* font-weight: 700; */
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--text-color-secondary);
+}
+
+.section-traits-list-item-desc {
+  /* font-weight: normal; */
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* section WE DO  */
+
+.section-wedo-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* section TEAM  */
+
+.section-team {
+  padding-top: 95px;
+}
+
+.team-member:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  margin: 30px auto 10px auto;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-secondary);
+}
+
+.team-member-position {
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 10px auto 30px auto;
+}
+
+/* page PORTFOLIO */
+
+.portfolio {
+  margin-top: 95px;
+}
+
+.portfolio-filters {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.btn-portfolio-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  background-color: var(--accent-inactive);
+  color: var(--text-color-secondary);
+}
+
+.btn-portfolio-filter:focus,
+.btn-portfolio-filter:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color-other-inv);
+}
+
+.portfolio-projects {
+  list-style: none;
+  margin-top: 35px;
+}
+
+.portfolio-projects-item {
+  padding-bottom: 20px;
+  /* border: 1px solid #eeeeee; - ADD COLOR TO PALETTE LATER */
+}
+
+.portfolio-projects-item:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-projects-item > .thumbnail {
+  width: 370px;
+}
+
+.portfolio-projects-item > .prj-name {
+  /* font-weight: 700; */
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--text-color-secondary);
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.portfolio-projects-item > .prj-type {
+  /* font-weight: normal; */
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+/* FOOTER */
+
+.footer {
+  height: 250px;
+  background-color: var(--bkg-color-secondary);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+}
+
+.footer-logo {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-logo > .logo-right {
+  color: var(--text-color-other-inv);
+}
+
+.footer-contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contacts-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-misc);
+}
+
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-contacts-item > .addr {
+  color: var(--text-color-other-inv);
+}
+
+.footer-contacts-item > .link {
+  color: var(--text-color-misc);
+}
+
+/* Final additions */
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
