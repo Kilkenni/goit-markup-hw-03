@@ -51,11 +51,8 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  /* min-height: 80px; */
   padding-left: 15px;
   padding-right: 15px;
-  /* padding-top: auto;
-  padding-bottom: auto; */
 
   justify-content: space-between;
   align-items: center;
@@ -65,8 +62,6 @@ p {
   display: flex;
   /* margin-left: auto;
   margin-right: auto; */
-  padding-top: auto;
-  padding-bottom: auto;
   max-width: 1200px;
   flex-wrap: wrap;
 
@@ -90,9 +85,6 @@ p {
 
 .header {
   min-height: 80px;
-  /* padding-top: 25px;
-  padding-bottom: auto; */
-  /* padding: auto 215px; */
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 215px;
@@ -101,7 +93,6 @@ p {
   border-bottom: 1px solid var(--border);
 }
 
-/* .header-logo, */
 .header-nav-panel {
   display: inline;
 }
